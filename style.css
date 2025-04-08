@@ -98,10 +98,6 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
-  
-
-
-
 
 
 
@@ -109,27 +105,177 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background-color: #004F44;
-    font-family: "DM Sans", sans-serif;
+@media(min-width:431px){
+    body{
+        background-color: #004F44;
+        font-family: "DM Sans", sans-serif;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+    
+    ul{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav{
+        margin-top: 58px;
+        padding: 0 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav_left,
+    .nav_center,
+    .nav_right {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav_left-buttons,
+    .nav_right-icons{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    
+    .nav_left-element>a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_left-arrow{
+        display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    }
+
+
+
+
+
+    .hero {
+        margin-top: 100px;
+        margin-left: 140px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+    }
+    
+    .hero-title {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 1.1;
+        max-width: 70%;
+        font-family: 'Chillax-Medium';
+        src: url('../fonts/Chillax-Medium.woff2') format('woff2'),
+            url('../fonts/Chillax-Medium.woff') format('woff'),
+            url('../fonts/Chillax-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-display: swap;
+        font-style: normal;
+    }
+    
+    .hero-desc {
+        font-size: 18px;
+        line-height: 1.6;
+        opacity: 0.8;
+        max-width: 70%;
+    }
+    
+    
+    .hero-actions {
+        display: flex;
+        align-items: baseline;
+        gap: 40px;
+    }
+    
+    .hero-explore {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 4px;
+    }
+    
+    .hero-button {
+        background-color: white;
+        color: #004F44;
+        font-size: 16px;
+        padding: 20px 40px;
+        border: none;
+        line-height: 1;
+        cursor: pointer;
+        width: fit-content;
+        transition: 0.3s;
+    }
+    
+    .hero-button:hover {
+        background-color: #cfe7e1;
+    }
+    
+    .hero-exp {
+        font-size: 16px;
+        opacity: 0.9;
+        line-height: 1;
+    }
+    
+    .hero-arrow {
+        width: 18px;
+    }
+
 }
 
-ul{
-    list-style: none;
-}
 
-.nav_left-buttons{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin-top: 58px;
-    margin-left: 140px;
-}
 
-.nav_left-element>a{
-    color: white;
-    text-decoration: none;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:430px){
+    body{
+        background-color: #004F44;
+        font-family: "DM Sans", sans-serif;
+        margin: 0 auto;
+    }
+    ul{
+        list-style: none;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-top: 58px;
+        margin-left: 140px;
+    }
+
+    
+    .nav_left-element>a{
+        color: white;
+        text-decoration: none;
+    }
+}
