@@ -129,6 +129,10 @@
         color: white;
     }
 
+    h2, h3, h4, h5, h6, p, span{
+      font-weight: 300;
+    }
+
 
 
 
@@ -400,7 +404,7 @@
 
 
     .feed_text{
-      max-width: 1080px;
+      max-width: 1160px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -411,17 +415,20 @@
       font-size: 40px;
       color: #004F44;
       margin-top: 70px;
+      font-weight: 300;
+      letter-spacing: 0.3px;
     }
 
     .feed_text>h3{
       font-size: 24px;
       color: #004F44;
       margin-top: 70px;
+      font-weight: 300;
       cursor: pointer;
     }
 
     .feed_carousel {
-      max-width: 1160px;
+      max-width: 1240px;
       margin: 48px auto;
       position: relative;
       padding: 0 40px;
@@ -523,7 +530,7 @@
     .hero-button:hover,
     .arrow-btn:hover,
     .hero_img3-button:hover,
-    .buy-btn:hover{
+    .carousel_buy-btn:hover{
       background-color: #004F44;
       color: white;
     }
@@ -582,6 +589,165 @@
 
     .search_icon:active{
       background-color: #177064;
+    }
+
+
+
+
+
+
+
+
+
+
+    .flowers_text{
+      max-width: 1160px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .flowers_text>h2{
+      font-size: 40px;
+      color: #004F44;
+      margin-top: 93px;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+    }
+
+    .flowers_text>h3{
+      font-size: 24px;
+      color: #004F44;
+      margin-top: 93px;
+      font-weight: 300;
+      cursor: pointer;
+    }
+
+    .flowers_cards{
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 64px;
+    }
+
+    .flower_card {
+      position: relative;
+      width: 270px;
+      height: 404px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .flower_card img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .flower_animation {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(1, 44, 38, 0.7);
+      color: white;
+      letter-spacing: 0.3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: bottom 0.7s ease;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .flower_animation h3{
+      font-size: 29px;
+    }
+    
+    .flower_card:hover .flower_animation {
+      bottom: 0;
+    }
+
+
+
+
+
+
+
+    .stands {
+      background-color: #f3fffc;
+      width: 100%;
+      padding: 80px 0;
+      margin-top: 90px;
+    }
+    
+    .stands h3 {
+      font-size: 40px;
+      color: #004F44;
+      margin-left: calc((100% - 1160px) / 2);
+      margin-bottom: 24px;
+    }
+    
+    .stands_row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .stands_cards {
+      display: flex;
+      gap: 24px;
+    }
+    
+    .card {
+      width: 370px;
+      height: 472px;
+      cursor: pointer;
+    }
+    
+    .card_inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    .card.flipped .card_inner {
+      transform: rotateY(180deg);
+    }
+    
+    .card_front,
+    .card_back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      overflow: hidden;
+    }
+    
+    .card_front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .card_back {
+      background-color: #004F44;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotateY(180deg);
     }
 }
 

@@ -209,6 +209,83 @@
           <input type="seacrh" placeholder="Search flowers..." class="searching_field">
           <div class="search_icon"><img src="img/clarity_search-line.svg" alt="search_icon"></div>
         </section>
+
+        <section class="flowers">
+          <div class="flowers_text">
+            <h2>Colorful New Arrivals</h2>
+            <h3>View all</h3>
+          </div>
+          <div class="flowers_cards">
+            <div class="flower_card">
+              <img src="img/image 14.png" alt="Card1" width="270px" height="404px">
+              <div class="flower_animation">
+                <h3>Blue Lily</h3>
+                <p>More information ></p>
+              </div>
+            </div>
+            <div class="flower_card">
+              <img src="img/image 15.png" alt="Card1" width="270px" height="404px">
+              <div class="flower_animation">
+                <h3>Blue Lily</h3>
+                <p>More information ></p>
+              </div>
+            </div>
+            <div class="flower_card">
+              <img src="img/image 16.png" alt="Card1" width="270px" height="404px">
+              <div class="flower_animation">
+                <h3>Blue Lily</h3>
+                <p>More information ></p>
+              </div>
+            </div>
+            <div class="flower_card">
+              <img src="img/image 17.png" alt="Card1" width="270px" height="404px">
+              <div class="flower_animation">
+                <h3>Blue Lily</h3>
+                <p>More information ></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stands">
+          <h3>Plant Stands</h3>
+          <div class="stands_row">
+            <div class="stands_cards">
+              <div class="card">
+                <div class="card_inner">
+                  <div class="card_front">
+                    <img src="img/image 5.png" alt="Front">
+                  </div>
+                  <div class="card_back">
+                    <p>Info about plant stand</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_inner">
+                  <div class="card_front">
+                    <img src="img/image 6.png" alt="Front">
+                  </div>
+                  <div class="card_back">
+                    <p>Info about plant stand</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_inner">
+                  <div class="card_front">
+                    <img src="img/image 7.png" alt="Front">
+                  </div>
+                  <div class="card_back">
+                    <p>Info about plant stand</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
     </main>
 
 
@@ -220,6 +297,13 @@
         function scrollCarousel(direction) {
           carousel.scrollLeft += direction * cardWidth;
         }
+
+
+        document.querySelectorAll('.card').forEach(card => {
+          card.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+          });
+        });
       </script>
 </body>
 </html>
