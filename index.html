@@ -66,9 +66,160 @@
     
     <main>
         <section class="feed">
+          <div class="feed_text">
             <h2>Featured</h2>
             <h3>View all</h3>
+          </div>
+            <div class="feed_carousel">
+                <button class="arrow-btn arrow-left" onclick="scrollCarousel(-1)">❮</button>
+                <div class="carousel" id="carousel">
+                  <div class="carousel_card">
+                    <img src="img/image 8.png" alt="Plant" />
+                    <div class="carousel_card-content">
+                      <div class="carousel_top-row">
+                        <span>Peperomia Ginny</span>
+                        <span>$25</span>
+                      </div>
+                      <div class="carousel_bottom-row">
+                        <div>
+                          <small>Pot color</small>
+                          <div class="carousel_bottom-row-colors">
+                            <span style="background: #39362E"></span>
+                            <span style="background: #F3A195"></span>
+                            <span style="background: #EFEAE6"></span>
+                            <span style="background: #C38364"></span>
+                          </div>
+                        </div>
+                        <button class="carousel_buy-btn">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel_card">
+                    <img src="img/image 9.png" alt="Plant" />
+                    <div class="carousel_card-content">
+                      <div class="carousel_top-row">
+                        <span>Bird’s Nest Fern</span>
+                        <span>$45</span>
+                      </div>
+                      <div class="carousel_bottom-row">
+                        <div>
+                          <small>Pot color</small>
+                          <div class="carousel_bottom-row-colors">
+                            <span style="background: #39362E"></span>
+                            <span style="background: #F3A195"></span>
+                            <span style="background: #EFEAE6"></span>
+                            <span style="background: #C38364"></span>
+                          </div>
+                        </div>
+                        <button class="carousel_buy-btn">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel_card">
+                    <img src="img/image 10.png" alt="Plant" />
+                    <div class="carousel_card-content">
+                      <div class="carousel_top-row">
+                        <span>Large Majesty Palm</span>
+                        <span>$52</span>
+                      </div>
+                      <div class="carousel_bottom-row">
+                        <div>
+                          <small>Pot color</small>
+                          <div class="carousel_bottom-row-colors">
+                            <span style="background: #39362E"></span>
+                            <span style="background: #F3A195"></span>
+                            <span style="background: #EFEAE6"></span>
+                            <span style="background: #C38364"></span>
+                          </div>
+                        </div>
+                        <button class="carousel_buy-btn">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel_card">
+                    <img src="img/image 11.png" alt="Plant" />
+                    <div class="carousel_card-content">
+                      <div class="carousel_top-row">
+                        <span>Pet Friendly Plant</span>
+                        <span>$30</span>
+                      </div>
+                      <div class="carousel_bottom-row">
+                        <div>
+                          <small>Pot color</small>
+                          <div class="carousel_bottom-row-colors">
+                            <span style="background: #39362E"></span>
+                            <span style="background: #F3A195"></span>
+                            <span style="background: #EFEAE6"></span>
+                            <span style="background: #C38364"></span>
+                          </div>
+                        </div>
+                        <button class="carousel_buy-btn">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel_card">
+                    <img src="img/image 11.png" alt="Plant" />
+                    <div class="carousel_card-content">
+                      <div class="carousel_top-row">
+                        <span>Pet Friendly Plant</span>
+                        <span>$30</span>
+                      </div>
+                      <div class="carousel_bottom-row">
+                        <div>
+                          <small>Pot color</small>
+                          <div class="carousel_bottom-row-colors">
+                            <span style="background: #39362E"></span>
+                            <span style="background: #F3A195"></span>
+                            <span style="background: #EFEAE6"></span>
+                            <span style="background: #C38364"></span>
+                          </div>
+                        </div>
+                        <button class="carousel_buy-btn">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel_card">
+                    <img src="img/image 10.png" alt="Plant" />
+                    <div class="carousel_card-content">
+                      <div class="carousel_top-row">
+                        <span>Large Majesty Palm</span>
+                        <span>$52</span>
+                      </div>
+                      <div class="carousel_bottom-row">
+                        <div>
+                          <small>Pot color</small>
+                          <div class="carousel_bottom-row-colors">
+                            <span style="background: #39362E"></span>
+                            <span style="background: #F3A195"></span>
+                            <span style="background: #EFEAE6"></span>
+                            <span style="background: #C38364"></span>
+                          </div>
+                        </div>
+                        <button class="carousel_buy-btn">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="arrow-btn arrow-right" onclick="scrollCarousel(1)">❯</button>
+              </div>
+        </section>
+
+        <section class="searching">
+          <div class="search_filter"><img src="img/Group 36.svg" alt="Filter_icon"></div>
+          <input type="seacrh" placeholder="Search flowers..." class="searching_field">
+          <div class="search_icon"><img src="img/clarity_search-line.svg" alt="search_icon"></div>
         </section>
     </main>
+
+
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        const cardWidth = 240; // width + gap
+    
+        function scrollCarousel(direction) {
+          carousel.scrollLeft += direction * cardWidth;
+        }
+      </script>
 </body>
 </html>
