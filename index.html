@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://www.fontshare.com/fonts/chillax" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -13,6 +14,9 @@
     <header>
         <div class="nav_container">
             <nav>
+              <div class="burger-menu">
+                <img src="img/quill_hamburger.svg" alt="Menu">
+              </div>
                 <ul class="nav_left">
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Products <img class="nav_left-element-arrow" src="img/Vector 2.svg" alt="Arrow"></a></li>
@@ -66,10 +70,11 @@
     
     <main>
         <section class="feed">
-          <div class="feed_text">
+          <div class="feed_container">
+            <div class="feed_text">
             <h2>Featured</h2>
             <h3>View all</h3>
-          </div>
+            </div>
             <div class="feed_carousel">
                 <button class="arrow-btn arrow-left" onclick="scrollCarousel(-1)">❮</button>
                 <div class="carousel" id="carousel">
@@ -202,93 +207,143 @@
                 </div>
                 <button class="arrow-btn arrow-right" onclick="scrollCarousel(1)">❯</button>
               </div>
+          </div>
+          
         </section>
 
         <section class="searching">
-          <div class="search_filter"><img src="img/Group 36.svg" alt="Filter_icon"></div>
-          <input type="seacrh" placeholder="Search flowers..." class="searching_field">
-          <div class="search_icon"><img src="img/clarity_search-line.svg" alt="search_icon"></div>
+          <div class="searching_container">
+            <div class="search_filter">
+              <img src="img/Group 36.svg" alt="Filter_icon">
+            </div>
+            <input type="seacrh" placeholder="Search flowers..." class="searching_field">
+            <div class="search_icon"><img src="img/clarity_search-line.svg" alt="search_icon"></div>
+          </div>
+          
         </section>
 
         <section class="flowers">
-          <div class="flowers_text">
-            <h2>Colorful New Arrivals</h2>
-            <h3>View all</h3>
+          <div class="flowers_container">
+            <div class="flowers_text">
+              <h2>Colorful New Arrivals</h2>
+              <h3>View all</h3>
+            </div>
+            <div class="flowers_cards">
+              <div class="flower_card">
+                <img src="img/image 14.png" alt="Card1" width="270px" height="404px">
+                <div class="flower_animation">
+                  <h3>Blue Lily</h3>
+                  <p>More information ></p>
+                </div>
+              </div>
+              <div class="flower_card">
+                <img src="img/image 15.png" alt="Card1" width="270px" height="404px">
+                <div class="flower_animation">
+                  <h3>Blue Lily</h3>
+                  <p>More information ></p>
+                </div>
+              </div>
+              <div class="flower_card">
+                <img src="img/image 16.png" alt="Card1" width="270px" height="404px">
+                <div class="flower_animation">
+                  <h3>Blue Lily</h3>
+                  <p>More information ></p>
+                </div>
+              </div>
+              <div class="flower_card">
+                <img src="img/image 17.png" alt="Card1" width="270px" height="404px">
+                <div class="flower_animation">
+                  <h3>Blue Lily</h3>
+                  <p>More information ></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="flowers_cards">
-            <div class="flower_card">
-              <img src="img/image 14.png" alt="Card1" width="270px" height="404px">
-              <div class="flower_animation">
-                <h3>Blue Lily</h3>
-                <p>More information ></p>
-              </div>
-            </div>
-            <div class="flower_card">
-              <img src="img/image 15.png" alt="Card1" width="270px" height="404px">
-              <div class="flower_animation">
-                <h3>Blue Lily</h3>
-                <p>More information ></p>
-              </div>
-            </div>
-            <div class="flower_card">
-              <img src="img/image 16.png" alt="Card1" width="270px" height="404px">
-              <div class="flower_animation">
-                <h3>Blue Lily</h3>
-                <p>More information ></p>
-              </div>
-            </div>
-            <div class="flower_card">
-              <img src="img/image 17.png" alt="Card1" width="270px" height="404px">
-              <div class="flower_animation">
-                <h3>Blue Lily</h3>
-                <p>More information ></p>
-              </div>
-            </div>
-          </div>
+          
         </section>
 
         <section class="stands">
-          <h3>Plant Stands</h3>
-          <div class="stands_row">
-            <div class="stands_cards">
-              <div class="card">
-                <div class="card_inner">
-                  <div class="card_front">
-                    <img src="img/image 5.png" alt="Front">
+          <div class="stands_container">
+            <h3>Plant Stands</h3>
+            <div class="stands_row">
+              <div class="stands_cards">
+                <div class="card">
+                  <div class="card_inner">
+                    <div class="card_front">
+                      <img src="img/image 5.png" alt="Front">
+                    </div>
+                    <div class="card_back">
+                      <img src="img/Black & White Geometric Beauty Circle Logo 1.png" alt="">
+                    </div>
                   </div>
-                  <div class="card_back">
-                    <p>Info about plant stand</p>
+                </div>
+                <div class="card">
+                  <div class="card_inner">
+                    <div class="card_front">
+                      <img src="img/image 6.png" alt="Front">
+                    </div>
+                    <div class="card_back">
+                      <img src="https://img.gazeta.ru/files3/257/19805257/upload-20220515_zea_s181_236-pic4_zoom-1500x1500-30603.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card_inner">
+                    <div class="card_front">
+                      <img src="img/image 7.png" alt="Front">
+                    </div>
+                    <div class="card_back">
+                      <img src="img/Black & White Geometric Beauty Circle Logo 1.png" alt="">
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="card_inner">
-                  <div class="card_front">
-                    <img src="img/image 6.png" alt="Front">
-                  </div>
-                  <div class="card_back">
-                    <p>Info about plant stand</p>
-                  </div>
-                </div>
+              <span class="stands_more">more →</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="contacts">
+          <div class="contacts_container">
+            <div class="contacts_data">
+              <h3>Free Shipping services</h3>
+              <p>* only for the same region</p>
+              <div class="contacts_phone">
+                <img src="img/Vector-1.svg" alt="">
+                <p>+62 1189-2719-00</p>
               </div>
-              <div class="card">
-                <div class="card_inner">
-                  <div class="card_front">
-                    <img src="img/image 7.png" alt="Front">
-                  </div>
-                  <div class="card_back">
-                    <p>Info about plant stand</p>
-                  </div>
-                </div>
+              <div class="contacts_email">
+                <img src="img/Vector-2.svg" alt="">
+                <p>order@platify.co</p>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+
+        <section class="address">
+          <div class="address_container">
+            <div class="address_map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45779.31106751264!2d79.98134408124137!3d44.182202899292655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x387fa6a9e6f2e0bd%3A0xb3374a22359649c7!2z0JbQsNGA0LrQtdC90YI!5e0!3m2!1sru!2skz!4v1744815440629!5m2!1sru!2skz" width="1159" height="287" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="address_map-overlay" onclick="enableIframe(this)"></div>
+            </div>
+            <div class="address_data">
+              <div class="address_data-btn">
+                <img src="img/Vector.svg" alt="">
+                <p class="get-directions">GET DIRECTIONS</p>
+              </div>
+              <div class="address_data-text">
+                <h3>Visit us</h3>
+                <p>Gekikara Street 16, Atalanta<br>
+                1327 Block M<br>
+                Mardial, Sigure<br>
+                T2G 0T2</p>
+                <p><u style="color:#0A1E1B">Open day</u> : 11am–5:30pm everyday</p>
               </div>
             </div>
           </div>
         </section>
-        
-        
     </main>
-
-
 
     <script>
         const carousel = document.getElementById('carousel');
@@ -304,6 +359,31 @@
             card.classList.toggle('flipped');
           });
         });
+
+
+
+        function enableIframe(overlay) {
+          const wrapper = overlay.parentElement;
+          const iframe = wrapper.querySelector("iframe");
+
+          iframe.style.pointerEvents = "auto";
+          overlay.style.display = "none";
+        }
+
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+          document.querySelector('.nav_left').classList.toggle('active');
+        });
+
+
+        const burger = document.querySelector('.burger');
+const navLeft = document.querySelector('.nav_left');
+
+// Добавляем обработчик события на клик по бургеру
+burger.addEventListener('click', () => {
+    // Переключаем класс для показа/скрытия меню
+    navLeft.classList.toggle('active'); // Меню будет показываться/скрываться
+});
+
       </script>
 </body>
 </html>
