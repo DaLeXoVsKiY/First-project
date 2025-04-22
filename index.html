@@ -17,7 +17,7 @@
               
               <div class="nav1">
                 <div class="burger-menu">
-                  <img src="img/quill_hamburger.svg" alt="Menu">
+                  <a href="#"><img src="img/quill_hamburger.svg" alt="Menu"></a>
                 </div>
                 <ul class="nav_left">
                     <li><a href="#">Shop</a></li>
@@ -25,17 +25,20 @@
                     <li><a href="#">Fertilizer</a></li>
                     <li><a href="#">Guide</a></li>
                 </ul>
+              </div>
 
                 <div class="nav_center">
                     <img src="img/Black & White Geometric Beauty Circle Logo 1.png" alt="Logo">
                 </div>
-              </div>
                 
-                <ul class="nav_right">
+                <div class="nav1">
+                  <ul class="nav_right">
                     <li><a href="#"><img src="img/clarity_search-line.svg" alt="Search"></a></li>
                     <li><a href="#"><img src="img/Group 53.svg" alt="Account"></a></li>
                     <li><a href="#"><img src="img/Group 52.svg" alt="Shopping Cart"></a></li>
-                </ul>
+                  </ul>
+                </div>
+                
             </nav>
         </div>
         
@@ -290,7 +293,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card" id="card">
                   <div class="card_inner">
                     <div class="card_front">
                       <img src="img/image 7.png" alt="Front">
@@ -337,11 +340,14 @@
               </div>
               <div class="address_data-text">
                 <h3>Visit us</h3>
-                <p>Gekikara Street 16, Atalanta<br>
+                <p class="address_data-coordinatesv1">Gekikara Street 16, Atalanta<br>
                 1327 Block M<br>
                 Mardial, Sigure<br>
                 T2G 0T2</p>
-                <p><u style="color:#0A1E1B">Open day</u> : 11am–5:30pm everyday</p>
+                <p class="address_data-coordinatesv2">Gekikara Street 16,<br>
+                   Atalanta 1327 Block M<br>
+                   Mardial, Sigure T2G 0T2</p>
+                <p class="address_data-time"><u>Open day</u> : 11am–5:30pm everyday</p>
               </div>
             </div>
           </div>
@@ -373,19 +379,13 @@
           overlay.style.display = "none";
         }
 
-        document.querySelector('.burger-menu').addEventListener('click', function() {
-          document.querySelector('.nav_left').classList.toggle('active');
+
+        const burger = document.querySelector('.burger-menu');
+        const navLeft = document.querySelector('.nav_left');
+
+        burger.addEventListener('click', () => {
+          navLeft.classList.toggle('active');
         });
-
-
-        const burger = document.querySelector('.burger');
-const navLeft = document.querySelector('.nav_left');
-
-// Добавляем обработчик события на клик по бургеру
-burger.addEventListener('click', () => {
-    // Переключаем класс для показа/скрытия меню
-    navLeft.classList.toggle('active'); // Меню будет показываться/скрываться
-});
 
       </script>
 </body>
